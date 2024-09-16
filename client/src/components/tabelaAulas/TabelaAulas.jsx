@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import AbreviaData from "./AbreviaData";
 
 function TabelaAulas() {
     const [aulas, setAulas] = useState([]);
@@ -42,9 +43,9 @@ function TabelaAulas() {
                 </thead>
                 <tbody>
                     {aulas.map((aula) => (
-                        <tr>
-                            <td>{aula.data_hora_inicio}</td>
-                            <td>{aula.data_hora_fim}</td>
+                        <tr key={aula.id}>
+                            <td><AbreviaData data={aula.data_hora_inicio}/></td>
+                            <td><AbreviaData data={aula.data_hora_fim}/></td>
                             <td>{aula.turma}</td>
                             <td>{aula.instrutor}</td>
                             <td>{aula.unidade_curricular}</td>
