@@ -4,6 +4,10 @@
     vertical-align: top;
 }
 
+.edit{
+    width: 100%;
+}
+
 .tabelaAulas{
     width: 100%;
     text-align: center;
@@ -13,7 +17,7 @@
 
 .tabelaAulas thead{
     background-color: #006bb4;
-    color: white;
+    color: #fff;
 }
 
 .tabelaAulas tbody tr:nth-child(odd){
