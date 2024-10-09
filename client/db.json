@@ -1,15 +1,15 @@
 {
   "aulas": [
     {
-      "id": "1300",
-      "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:00:00.000Z",
-      "data_hora_fim": "2024-08-30T01:00:00.000Z",
+      "data": "",
+      "data_hora_inicio": "",
+      "data_hora_fim": "",
       "turma": "EMP-NBM-03",
       "instrutor": "JOEL HERBERT BARBOSA SILVA",
       "unidade_curricular": "NOÇÕES BÁSICAS PARA MAQUINISTAS (CH: 219.0000)",
       "ambiente": "VTRIA-3-SALA-3004",
-      "chave": null
+      "chave": null,
+      "id": "1300"
     },
     {
       "id": "1280",
@@ -23,37 +23,26 @@
       "chave": null
     },
     {
-      "id": "1326",
-      "data": "2024-08-29T03:00:00.000Z",
-      "data_hora_inicio": "2024-08-29T21:30:00.000Z",
-      "data_hora_fim": "2024-08-30T01:00:00.000Z",
+      "data": "",
+      "data_hora_inicio": "",
+      "data_hora_fim": "",
       "turma": "HTC-MEC-4-92",
       "instrutor": "AFONSO DE JESUS CORDEIRO",
       "unidade_curricular": "DESENVOLVIMENTO DE SISTEMAS DE AUTOMAÇÃO MECÂNICA (CH: 100.0000)",
       "ambiente": "VTRIA-3-LAB-3003",
-      "chave": null
+      "chave": null,
+      "id": "1326"
     },
     {
-      "id": "ca8c",
-      "data": "2024-10-07",
-      "data_hora_inicio": "13:30",
-      "data_hora_fim": "17:30",
-      "turma": "Visita",
-      "instrutor": "Emanuel",
-      "unidade_curricular": "Engenharia de Software",
-      "ambiente": "Labserver-Labserver-Labserver",
-      "chave": null
-    },
-    {
-      "id": "c497",
-      "data": "2024-10-09",
-      "data_hora_inicio": "16:00",
-      "data_hora_fim": "18:20",
+      "data": "",
+      "data_hora_inicio": "",
+      "data_hora_fim": "",
       "turma": "AIT-DDS-5",
-      "instrutor": "Sarah Duque",
-      "unidade_curricular": "FUNDAMENTOS DA PROPAGANDA",
-      "ambiente": "PORTO-PORTO-PORTO",
-      "chave": null
+      "instrutor": "DUQUESA SARAH DE MONTEIRO",
+      "unidade_curricular": "GESTÃO DE PRODUTIVIDADE TEMPORAL",
+      "ambiente": "AMBIENTE-CLIMATIZADO-SALA-04",
+      "chave": null,
+      "id": "0f06"
     }
   ],
   "imagens": [

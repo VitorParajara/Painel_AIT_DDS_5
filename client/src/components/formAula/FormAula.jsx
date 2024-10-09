@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom';
 
-function FormAula({ titulo, textoBotao, handleSubmit, id}) {
+function FormAula({ titulo, textoBotao, handleSubmit, id, tipo}) {
+    const navigate = useNavigate();
+
     const [dataAula, setDataAula] = useState('');
     const [horaInicio, setHoraInicio] = useState('');
     const [horaFim, setHoraFim] = useState('');
@@ -9,24 +12,31 @@ function FormAula({ titulo, textoBotao, handleSubmit, id}) {
     const [unidadeCurricular, setUnidadeCurricular] = useState('');
     const [ambiente, setAmbiente] = useState('');
 
-    useEffect(()=>{
-        if(id){
+    useEffect(() => {
+        if (id) {
             baixarAula(id)
         }
-        
-    },[]);
 
-    async function baixarAula(id){
+    }, []);
+
+    async function baixarAula(id) {
         try {
-            const resposta = await fetch(`http://localhost:5000/aulas/${id}`,{
-                method:'GET',
-                headers:{
-                    'Content-Type':'application/json'
+            const resposta = await fetch(`http://localhost:5000/aulas/${id}`, {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json'
                 }
             });
 
-            if(!resposta.ok){
+            if (!resposta.ok) {
                 throw new Error('Erro ao buscar aula');
+            } else {
+                const respostaJSON = await resposta.json();
+                console.log(respostaJSON);
+                setTurma(respostaJSON.turma);
+                setInstrutor(respostaJSON.instrutor);
+                setUnidadeCurricular(respostaJSON.unidade_curricular);
+                setAmbiente(respostaJSON.ambiente);
             }
         } catch (error) {
             console.log(error)
@@ -46,7 +56,8 @@ function FormAula({ titulo, textoBotao, handleSubmit, id}) {
             chave: null
         }
 
-        handleSubmit(aula);
+        handleSubmit(aula, id);
+        navigate(`/gestao_aula/${tipo}`)
     }
 
     return (

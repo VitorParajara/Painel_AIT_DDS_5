@@ -25,7 +25,10 @@ function CadastroAula() {
   return (
     <div>
       <Navbar />
-      <FormAula titulo='Cadastrar Aula' textoBotao='Cadastrar' handleSubmit={cadastrarAula}/>
+      <FormAula titulo='Cadastrar Aula'
+      textoBotao='Cadastrar'
+      handleSubmit={cadastrarAula}
+      tipo='cadastrada'/>
     </div>
 
   )
