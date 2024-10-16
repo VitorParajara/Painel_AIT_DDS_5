@@ -22,7 +22,7 @@ function CadastroAula() {
     }
   }
 
-  // ddd
+
   return (
     <div>
       <Navbar />
