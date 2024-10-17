@@ -8,4 +8,6 @@ baixar json
        "test": "echo \"Error: no test specified\" && exit 1"
      },
 baixar o cors
+habilitar cors no index
 baixar mysql2
+habilitar o json

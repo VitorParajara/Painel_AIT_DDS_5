@@ -4,3 +4,4 @@ export const db = {
     password:'',
     database:'painel'
 }
+export default db;
